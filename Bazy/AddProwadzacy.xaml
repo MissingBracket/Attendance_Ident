@@ -1,0 +1,25 @@
+﻿<Page x:Class="CardReaderClient.AddProwadzacy"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CardReaderClient"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="AddProwadzacy">
+
+    <Grid>
+        <Label x:Name="label" Content="Dodaj prowadzącego" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Imie" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Nazwisko" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Hasło" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy3" Content="Powtórz hasło" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="imieText" HorizontalAlignment="Left" Height="26" Margin="118,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="nazwiskoText" HorizontalAlignment="Left" Height="26" Margin="118,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <PasswordBox x:Name="passBox" HorizontalAlignment="Left" Margin="118,138,0,0" VerticalAlignment="Top" Width="172" Height="26" PasswordChar="●"/>
+        <PasswordBox x:Name="repeatBox" HorizontalAlignment="Left" Margin="118,169,0,0" VerticalAlignment="Top" Width="172" Height="26" PasswordChar="●" RenderTransformOrigin="0.5,1.962"/>
+        <Button x:Name="button" Content="Dodaj" HorizontalAlignment="Left" Margin="11,237,0,0" VerticalAlignment="Top" Width="121" RenderTransformOrigin="0.533,-0.091" Height="53" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Usuń" HorizontalAlignment="Left" Margin="169,237,0,0" VerticalAlignment="Top" Width="121" RenderTransformOrigin="0.533,-0.091" Height="53" Click="button_Copy_Click"/>
+
+    </Grid>
+</Page>

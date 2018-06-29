@@ -1,0 +1,25 @@
+﻿<Window x:Class="CardReaderClient.LoggedIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CardReaderClient"
+        mc:Ignorable="d"
+        Title="LoggedIn" Height="570" Width="700">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="290*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="welcome" Content="ds" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.1,0.37" Height="27" Margin="10,28,0,0" Width="183"/>
+
+        <Frame NavigationUIVisibility="Hidden"  Margin="200,82,0,0" Name="Main" Grid.RowSpan="2"/>
+        <Button x:Name="AddStudent" Content="Dodaj studenta" HorizontalAlignment="Left" Height="28" Margin="0,8,0,0" VerticalAlignment="Top" Width="193" Grid.Row="1" Click="AddStudent_Click"/>
+        <Button x:Name="AddProwadzacy" Content="Dodaj prowadzącego" HorizontalAlignment="Left" Height="28" Margin="0,112,0,0" VerticalAlignment="Top" Width="193" Grid.Row="1" Click="AddProwadzacy_Click"/>
+        <Button x:Name="AddPrzedmiot" Content="Dodaj przedmiot" HorizontalAlignment="Left" Height="28" Margin="2,56,0,0" VerticalAlignment="Top" Width="193" Grid.Row="1" Click="AddPrzedmiot_Click"/>
+        <Button x:Name="StartLesson" Content="Rozpocznij zajęcia" HorizontalAlignment="Left" Height="28" Margin="0,368,0,0" VerticalAlignment="Top" Width="126" Grid.Row="1" Click="StartLesson_Click"/>
+        <Button x:Name="AddObowiazek" Content="Dodaj studentów do przedmiotów" HorizontalAlignment="Left" Height="28" Margin="0,168,0,0" VerticalAlignment="Top" Width="193" Grid.Row="1" Click="AddObowiazek_Click"/>
+        <Button x:Name="MySubjects" Content="Moje przedmioty" HorizontalAlignment="Left" Height="28" Margin="0,310,0,0" VerticalAlignment="Top" Width="126" Grid.Row="1" Click="MySubjects_Click"/>
+
+    </Grid>
+</Window>

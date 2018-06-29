@@ -1,0 +1,24 @@
+﻿<Page x:Class="CardReaderClient.Widoki"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CardReaderClient"
+      mc:Ignorable="d" 
+      d:DesignHeight="356" d:DesignWidth="700"
+      Title="Widoki">
+
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/memes/fgiven.png" Stretch="Fill"/>
+        </Grid.Background>
+       
+        <ListView x:Name="listView" HorizontalAlignment="Left" Margin="303,88,0,134" Width="190" MouseDoubleClick="listView_MouseDoubleClick" RenderTransformOrigin="0.066,-0.454">
+            
+        </ListView>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="39,180,0,0" VerticalAlignment="Top" ItemsSource="{Binding}"  MaxHeight="360"/>
+        <Button x:Name="button" Visibility="Hidden"  Content="Button" HorizontalAlignment="Left" Height="56" Margin="499,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="176" Click="button_Click_1"/>
+
+
+    </Grid>
+</Page>

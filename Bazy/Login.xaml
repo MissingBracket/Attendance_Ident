@@ -1,0 +1,22 @@
+﻿<Page x:Class="CardReaderClient.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CardReaderClient"
+      mc:Ignorable="d" 
+      d:DesignHeight="356" d:DesignWidth="700"
+      Title="Login">
+
+    <Grid>
+        <Grid.Background >
+            <ImageBrush ImageSource="/memes/kapitanBackend.jpg" Stretch="Fill"/>
+        </Grid.Background>
+
+        <Button x:Name="button" Content="Zaloguj!!!" HorizontalAlignment="Left" Margin="504,205,0,0" VerticalAlignment="Top" Width="86" Height="45" Click="button_Click"/>
+        <TextBox x:Name="nameText" HorizontalAlignment="Left" Height="24" Margin="446,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Text="Imie prowadzącego" GotKeyboardFocus="nameText_GotKeyboardFocus"/>
+        <TextBox x:Name="surnameText" HorizontalAlignment="Left" Height="23" Margin="446,114,0,0" TextWrapping="Wrap" Text="Nazwisko prowadzącego" VerticalAlignment="Top" Width="215" GotKeyboardFocus="surnameText_GotKeyboardFocus"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="446,158,0,0" VerticalAlignment="Top" Width="215" Height="26" Password="Hasło" GotKeyboardFocus="passwordBox_GotKeyboardFocus"/>
+
+    </Grid>
+</Page>

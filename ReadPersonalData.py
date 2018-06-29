@@ -1,4 +1,5 @@
 import pyasn1
+
 from smartcard.Exceptions import CardRequestTimeoutException
 from smartcard.System import readers
 from smartcard.util import toHexString
@@ -9,6 +10,8 @@ from smartcard.CardRequest import CardRequest
 from smartcard.util import toHexString, toBytes
 import ctypes  # An included library with Python install.
 from threading import Thread
+import sqltest as st
+
 import re
 
 def popWindow():
@@ -91,9 +94,14 @@ while True:
 
 
 
-        Message = FirstName + " " + SecondName +" " + Surname + ", " + Index
-        print(Message)
-        alreadRead=True
+
+        #print(Message)
+
+        alreadRead = True
+        Message = st.writeToDb(FirstName, Surname, Index)
+
+
+
         popWindow()
         #f = open("file", mode='wb')
         #f.write(bytes(out))
